@@ -1,0 +1,520 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(218, 28%, 13%);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* navbar styling */
+nav {
+  height: 6rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  background-color: hsl(217, 79%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-logo {
+  padding-left: 25px;
+  width: 70%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 20vw;
+  text-decoration: none;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+}
+
+.footer-item /* li:hover, .nav-links li a:hover*/ {
+  
+  font-weight: 700;
+}
+
+
+/* main section styling */
+.main-container {
+  background-color: hsl(217, 28%, 15%);
+  width: 100%;
+  margin: 0;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-title {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  width: 50%;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.button-box {
+  align-items: center;
+}
+
+.main-background {
+  position: absolute;
+  top: 650px;
+  z-index: 0;
+  width: 100%;
+}
+
+.desktop-bg {
+  width: 100%;
+}
+
+.mobile-bg {
+  display: none;
+}
+
+.title-text {
+  font-weight: 700;
+  margin-bottom: 7px;
+  line-height: 50px;
+}
+
+.sub-title {
+  font-size: 15px;
+  padding: 0 18%;
+  line-height: 24px;
+}
+
+.main-title button {
+  cursor: pointer;
+  width: 200px;
+  margin-top: 20px;
+  align-items: center;
+  padding: 16px 0;
+  border: none;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+.main-title button:hover, .input-button button:hover {
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+
+/* -------------------- */
+/* features styling */
+#features {
+  width: 100%;
+  background-color: hsl(218, 28%, 13%);
+}
+
+.grid-container {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  max-width: 65%;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  z-index: 15;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 350px));
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.grid-row .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.grid-item h3 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.grid-item .text-features {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* -------------------------------- */
+/* about-works styling */
+.about-works, .testimonials {
+  padding: 2rem 5rem;
+  max-width: 100%;
+  margin: auto;
+}
+
+.about-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 350px));
+  justify-content: space-between;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-words, .about-img, .testimonials-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.about-words {
+  padding: 4rem 0 3rem 3rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+}
+
+.about-link {
+  color: hsl(176, 68%, 64%);
+}
+
+.about-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* ----------------------------- */
+/* testimonials styling */
+.quotes {
+  width: 70px;
+  position: relative;
+  top: 20px;
+  left: -5px;
+  z-index: -10;
+}
+
+.testimonials {
+  padding-bottom: 15rem;
+}
+
+.testimonials-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 350px));
+  justify-content: space-between;
+}
+
+.testimonials-item {
+  background-color: hsl(219, 30%, 18%);
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 10px #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.profile-img img {
+  width: 40px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.profile-img {
+  width: 50px;
+  height: 100%;
+  float: left;
+}
+
+.profile-identity {
+  line-height: 5px;
+}
+
+.profile-name {
+  font-weight: 700;
+}
+
+/* ----------------------- */
+/* sign up styling */
+.signup-container {
+  padding: 0 30%;
+  margin: auto;
+  background-color: hsl(216, 53%, 9%);
+  height: 12rem;
+}
+
+.sign-up {
+  width: 100%;
+  background-color: hsl(217, 28%, 15%);
+  position: relative;
+  top: -100px;
+  left: -42px;
+  box-shadow: 0 5px 10px #000;
+  border-radius: 10px;
+  padding: 10px 45px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.input-button {
+  height: 35px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.input-button input {
+  float: left;
+  width: 65%;
+  height: 100%;
+  border: none;
+  border-radius: 40px;
+  padding-left: 20px;
+}
+
+.input-button button {
+  width: 30%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+
+ #message {
+  color: hsl(0, 100%, 63%);
+  position:absolute;
+  left:80px;
+  bottom:-5px;
+  font-size: 15px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.signup-text {
+  font-size: 15px;
+}
+
+/* ------------------- */
+/* footer styling */
+footer {
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 53%, 9%);
+  padding: 40px 0 30px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-row {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(0, 5%, 87%);
+}
+
+footer img {
+  padding-left:5%;
+}
+
+.footer-item li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.footer-item li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  line-height: 30px;
+}
+
+.footer-item div{
+  width: 150%;
+}
+.footer-item div p {
+  margin-top:0;
+}
+
+.footer-item div svg{
+  float: left;
+  margin-right: 18px;
+}
+
+.brands {
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.leftimg{
+  float: left;
+}
+.fa-brands {
+  padding: 0 10px;
+  color: rgb(163, 247, 247);
+}
+
+@media only screen and (max-width: 576px) {
+  .nav-logo img {
+    width: 50%;
+    padding-right: 0;
+  }
+
+  .nav-links {
+    width: 40vw;
+  }
+
+  .main-container {
+    padding-bottom: 1rem;
+  }
+
+  .main-title {
+    width: 90%;
+  }
+
+  .grid-container, .fylo-works {
+    max-width: 90%;
+  }
+
+  .testimonials{
+    padding: 2rem 1.5rem;
+  }
+
+  .last-grid {
+    margin-bottom: 0;
+  }
+
+  .grid-row, .productive-row, .testimonials-row{
+    grid-template-columns: repeat(auto-fill, minmax(100%, 350px));
+  }
+
+  .sub-title {
+    padding: 0 10%;
+  }
+
+
+  #features {
+    background-color: hsl(218, 28%, 13%);
+    padding-top: 24rem;
+    position: relative;
+    top: -17.5rem;
+    height: -20%;
+  }
+
+  #message {
+   left:55px;
+   bottom:59px;
+   font-size: 12px;
+ }
+
+  .desktop-bg {
+    display: none;
+  }
+
+  .mobile-bg {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: -19rem;
+  }
+
+  .fylo-works{
+    padding: 2rem 2rem;
+  }
+
+  .productive-words, .productive-img, .pro-img {
+    width: 100%;
+  }
+
+  .productive-words {
+    padding:0;
+    padding-top: 35px;
+  }
+
+  .h3 {
+    padding-top:20px;
+  }
+
+  .text-features {
+    padding-top:10px;
+  }
+
+  .signup-container {
+    padding: 0 20%;
+  }
+
+  .testimonials {
+    padding-bottom: 20rem;
+  }
+
+.testimonials-item{
+  margin-bottom:40px;
+}
+
+  .footer-item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer-item div {
+    width: 100%;
+  }
+
+  .sign-up {
+    padding-bottom: 4.5rem;
+    top: -160px;
+  }
+
+.input-button input {
+  width:90%;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.input-button button {
+    width:100%;
+    margin: 15px 0;
+    align-items: center;
+  }
+
+}
